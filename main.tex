@@ -1,0 +1,101 @@
+\documentclass[14pt, oneside]{altsu-report}
+
+\worktype{Отчёт по практике на тему:}
+\title{Разработка игры Pac-man на языке программирования С++}
+\author{Д.\,А.~Кулиев}
+\groupnumber{5.205-1}
+\GradebookNumber{1337}
+\supervisor{И.\,А.~Шмаков}
+\supervisordegree{ст.пр}
+\ministry{Министерство науки и высшего образования}
+\country{Российской Федерации}
+\fulluniversityname{ФГБОУ ВО Алтайский государственный университет}
+\institute{Институт цифровых технологий, электроники и физики}
+\department{Кафедра вычислительной техники и электроники}
+\departmentchief{В.\,В.~Пашнев}
+\departmentchiefdegree{к.ф.-м.н., доцент}
+\shortdepartment{ВТиЭ}
+\abstractRU{В отчёте содержатся сведения о курсовой работе.
+
+Курсовая работа заключается в создании кроссплатформенной программы, представляющей собой игру Pac-man.
+
+В отчёте приведено описание используемой библиотеки и инструментария для написания программы на языке программирования С++.
+
+Также в отчёте приведены общие сведения об игре Pac-man.
+
+Наряду с этим представлены проверка работспособности программы, диаграмма UML, полный код программы.}
+\abstractEN{The report contains information about the course work.
+
+The course work is to create a cross-platform program that is a Pac-man game.
+
+The report describes the library and tools used to write a program in the C++ programming language.
+
+The report also provides general information about the Pac-man game.
+
+Along with this, a program health check, a UML diagram, and the full program code are presented.}
+\keysRU{программа, пакман, игра, кроссплатформенная программа}
+\keysEN{program,pacman,game,cross-platform program}
+
+\date{\the\year}
+
+% Подключение файлов с библиотекой.
+\addbibresource{graduate-students.bib}
+
+% Пакет для отладки отступов.
+%\usepackage{showframe}
+
+\begin{document}
+\maketitle
+
+\setcounter{page}{2}
+\makeabstract
+\tableofcontents
+
+\chapter*{Введение}
+\phantomsection\addcontentsline{toc}{chapter}{ВВЕДЕНИЕ}
+
+\textbf{Актуальность:}
+Разработка кроссплатформенной программы на языке программирования С++ может послужить хорошим стимулом как для более глубокого изучения программирования, так и для понимания сборки программы под различные платформы.
+
+Разработка игр требует применения широкого спектра навыков программирования, таких как разработка алгоритмов, работа с графикой и обработка ввода.
+Программисты могут получить практический опыт в решении реальных проблем и применении своих знаний в контексте.
+
+\textbf{Цель:}
+Создать кроссплатформенную игру Pac-man с использованием языка программирования C++ и библиотеки ImGui.
+
+\textbf{Задачи:}
+\begin{enumerate}
+	\item Изучить графическую библиотеку ImGui.
+    \item Реализовать ядро игры Pac-man
+	\item Изучить алгоритмы игры Pac-man.
+	\item Изучить принцип ООП в C++.
+    \item Изучить кроссплатформенную библиотеку для обеспечения совместимости с различными операционными системами
+	\item Изучить сборку программы на языке C++.
+\end{enumerate}
+
+% Подключение первой главы (теория):
+\include{chapter-1-theory.tex}
+% Подключение второй главы (практическая часть):
+\include{chapter-2-practice.tex} 
+\include{chapter-3-test.tex}
+
+\chapter*{Заключение}
+\phantomsection\addcontentsline{toc}{chapter}{ЗАКЛЮЧЕНИЕ}
+
+\newpage
+\phantomsection\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
+\printbibliography[title={Список использованной литературы}]
+
+\appendix
+\newpage
+\chapter*{\raggedleft\label{appendix1}Приложение}
+\addcontentsline{toc}{chapter}{Приложение}
+
+\begin{code}
+	\captionof*{listing}{Главный файл игры Pac-Man на языке \textit{С++} с использованием библиотеки \textit{ImGui}~\pageref{pysdl2}.}\label{code:main}
+	%\inputminted[mathescape,linenos,frame=lines,breaklines]{C++}{src/main.ccp}
+\end{code}
+
+
+\end{document}
+
