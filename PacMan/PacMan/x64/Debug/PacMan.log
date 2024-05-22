@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(65,1): warning C4305: +=: усечение из "double" в "float"
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(214,35): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(266,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(325,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(485,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Desktop\PacMan\PacMan\main.cpp(485,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  PacMan.vcxproj -> C:\Users\user\Desktop\PacMan\x64\Debug\PacMan.exe
